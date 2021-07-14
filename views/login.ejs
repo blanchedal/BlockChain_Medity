@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Medity</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/sha256.min.js"></script>
+  <script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+  <script src="js/argiculture.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<body>
+  <section class="row tm-pt-4 tm-mb-3">
+    <div class="col-12 tm-page-cols-container">
+      <div class="tm-page-col-login">
+        <h1 class="tm-text-secondary"> 로그인 </h1>
+        <br>
+        <div>
+            <!-- <label for="user" class="label">Address</label> -->
+            <input id = "user" class = "input form-control rounded-0 border-top-0 border-right-0 border-left-0" type="text" name="username" placeholder="Address" /><br />
+            <!-- <label for="pass" class="label">Password</label> -->
+            <!-- <input id = "pass" class = "input form-control rounded-0 border-top-0 border-right-0 border-left-0" type="password" name="password" placeholder="password" /><br /> -->
+            <input id ="signin_button" type="submit" class="btn btn-secondary" value="Sign In">
+            <br />
+            <form action="/main" method="post">
+              <input id ="mainin_button_1" type="submit" style="display: none;" name = "username" class="btn btn-secondary"  value="환자">
+              <input id = "mainin_text_1" type="text" style="display: none;" name="addr">
+            </form>
+            <form action="/main2" method="post">
+              <input id ="mainin_button_2" type="submit" style="display: none;" name = "username" class="btn btn-secondary"  value="의사">
+              <input id = "mainin_text_2" type="text" style="display: none;" name="addr">
+            </form><br />
+        </div> 
+
+        <br />
+
+        <h1 class="tm-text-secondary"> 회원가입 </h1>
+        <br>
+        <div>
+          <!-- <label for="user" class="label">Address</label> -->
+          <input id="user_sign" type="text" name="addr" class="input form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Address"><br />
+          <!-- <label for="pass" class="label">Password</label> -->
+          <!-- <input id="pass_sign" type="password" name="pw" class="input form-control rounded-0 border-top-0 border-right-0 border-left-0" data-type="password" placeholder="Password"><br /> -->
+          <!-- <label for="pass" class="label">customer(1)/doctor(2)</label> -->
+          <input id="type_sign" type="number" name="type" class="input form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="customer(1)/doctor(2)"><br />
+          <input id ="signup_button" type="submit" class="btn btn-secondary" value="Sign Up">
+        </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+</html>
